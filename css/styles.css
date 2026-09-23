@@ -77,3 +77,152 @@ footer {
   text-align: center;
   padding: 20px;
 }
+.pagina-panoramas {
+  min-height: 100vh;
+  color: #18251f;
+  background-image: linear-gradient(rgba(8, 25, 19, 0.3), rgba(8, 25, 19, 0.45)), url('../img/fondo-panoramas.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.pagina-panoramas header {
+  background-color: rgba(17, 31, 25, 0.9);
+}
+
+.contenedor-principal-panoramas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+  padding: 56px 20px;
+  box-sizing: border-box;
+}
+
+.ventana-central {
+  width: min(100%, 980px);
+  padding: 42px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(250, 252, 247, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+}
+
+.ventana-central h1 {
+  margin: 0;
+  color: #214b39;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.subtitulo-ventana {
+  max-width: 650px;
+  margin: 12px auto 30px;
+  color: #52635a;
+  font-size: 1.05rem;
+}
+
+.contenedor-etiquetas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  text-align: left;
+}
+
+.etiqueta-panorama {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  min-height: 128px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.78);
+  border: 1px solid #d8e2d8;
+  border-radius: 10px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.etiqueta-panorama:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(33, 75, 57, 0.14);
+}
+
+.panorama-interactivo {
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.panorama-interactivo .texto-etiqueta {
+  width: 100%;
+}
+
+.imagen-panorama {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-height: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0;
+  transition: max-height 220ms ease, opacity 220ms ease;
+}
+
+.panorama-interactivo:hover {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: start;
+  text-align: left;
+}
+
+.panorama-interactivo:hover .imagen-panorama {
+  max-height: 170px;
+  opacity: 1;
+}
+
+.icono {
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #e0eee3;
+  font-size: 1.65rem;
+}
+
+.texto-etiqueta h3 {
+  margin: 2px 0 7px;
+  color: #214b39;
+  font-size: 1.08rem;
+}
+
+.texto-etiqueta p {
+  margin: 0;
+  color: #53635a;
+  line-height: 1.45;
+}
+
+.pagina-panoramas footer {
+  background-color: rgba(17, 31, 25, 0.92);
+}
+
+@media (max-width: 700px) {
+  .pagina-panoramas {
+    background-attachment: scroll;
+  }
+
+  .contenedor-principal-panoramas {
+    min-height: auto;
+    padding: 32px 14px 44px;
+  }
+
+  .ventana-central {
+    padding: 28px 18px;
+  }
+
+  .contenedor-etiquetas {
+    grid-template-columns: 1fr;
+  }
+}
