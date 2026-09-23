@@ -29,7 +29,7 @@ Para visualizar el proyecto localmente sin necesidad de instalar dependencias ad
 La carga de trabajo fue dividida equitativamente entre los tres miembros del equipo:
 
 * **[Benjamín Chamorro]:**
-  * Creación y maquetación de la sección de Panoramas (`páginma.html`) con las 6 actividades principales y estructura semántica.
+  * Creación y maquetación de la sección de Panoramas (`página1.html`) con las 6 actividades principales y estructura semántica.
   * Implementación de los estilos CSS propios para la ventana central flotante, etiquetas interactivas y fondo personalizado.
   * Creación de la estructura del (`README.md`) y su redacción.
 * **[Luis Núñez]:**
