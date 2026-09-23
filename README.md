@@ -33,7 +33,9 @@ La carga de trabajo fue dividida equitativamente entre los tres miembros del equ
   * Implementación de los estilos CSS propios para la ventana central flotante, etiquetas interactivas y fondo personalizado.
   * Creación de la estructura del (`README.md`) y su redacción.
 * **[Luis Núñez]:**
-
+  * Creación y maquetación de la página principal (`index.html`).
+  * Configuración inicial del repositorio y estructura de carpetas (`css/`, `img/`).
+  * Creación de la hoja de estilos base (`css/styles.css`) y barra de navegación común.
 * **[Iván Herrera ]:**
 
 
