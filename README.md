@@ -30,6 +30,7 @@ La carga de trabajo fue dividida equitativamente entre los tres miembros del equ
 
 * **[Benjamín Chamorro]:**
   * Creación y maquetación de la sección de Panoramas (`pagina1.html`) con las 6 actividades principales y estructura semántica.
+  * Creación y maquetación de la sección de Contacto (`pagina3.html`) con integración de Google Maps y opciones de agendación.
   * Implementación de los estilos CSS propios para la ventana central flotante, etiquetas interactivas y fondo personalizado.
   * Creación de la estructura del (`README.md`) y su redacción.
 * **[Luis Núñez]:**
