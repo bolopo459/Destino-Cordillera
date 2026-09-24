@@ -384,3 +384,390 @@ footer {
   }
 
 }
+
+.pagina-alojamiento {
+  min-height: 100vh;
+  color: #1c3328;
+
+  background-image:
+    linear-gradient(
+      rgba(15, 40, 29, 0.55),
+      rgba(15, 40, 29, 0.7)
+    ),
+    url('../img/inicio.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-principal-alojamiento {
+  display: flex;
+  justify-content: center;
+
+  padding: 48px 20px 64px;
+}
+
+
+/* VENTANA CENTRAL */
+
+.ventana-alojamiento {
+  width: min(100%, 1100px);
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  background-color: rgba(250, 252, 247, 0.96);
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  border-radius: 14px;
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32);
+}
+
+
+/* ENCABEZADO DE LA PÁGINA */
+
+.encabezado-alojamiento {
+  max-width: 760px;
+
+  margin: 0 auto 45px;
+
+  text-align: center;
+}
+
+
+.encabezado-alojamiento h1 {
+  margin: 0 0 12px;
+
+  color: #214b39;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+
+.encabezado-alojamiento p {
+  margin: 0;
+
+  color: #52635a;
+
+  font-size: 1.05rem;
+
+  line-height: 1.6;
+}
+
+
+/* SECCIONES */
+
+.seccion-servicios {
+  margin-bottom: 55px;
+}
+
+
+.titulo-seccion-servicios {
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+
+.titulo-seccion-servicios h2 {
+  margin: 0 0 8px;
+
+  color: #214b39;
+
+  font-size: 1.8rem;
+}
+
+
+.titulo-seccion-servicios p {
+  max-width: 680px;
+
+  margin: 0 auto;
+
+  color: #52635a;
+
+  line-height: 1.5;
+}
+
+
+/* CONTENEDOR DE TARJETAS */
+
+.contenedor-tarjetas-servicios {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* TARJETAS */
+
+.tarjeta-servicio {
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+
+  border: 1px solid #d8e2d8;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 14px rgba(33, 75, 57, 0.08);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+
+.tarjeta-servicio:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 22px rgba(33, 75, 57, 0.18);
+}
+
+
+/* ETIQUETA SOBRE CADA TARJETA */
+
+.categoria-servicio {
+  display: inline-block;
+
+  width: fit-content;
+
+  margin-bottom: 12px;
+
+  padding: 6px 10px;
+
+  background-color: #e0eee3;
+
+  color: #214b39;
+
+  border-radius: 20px;
+
+  font-size: 0.8rem;
+
+  font-weight: bold;
+}
+
+
+/* TÍTULOS DE LAS TARJETAS */
+
+.tarjeta-servicio h3 {
+  margin: 0 0 12px;
+
+  color: #214b39;
+
+  font-size: 1.25rem;
+}
+
+
+/* TEXTO DE LAS TARJETAS */
+
+.tarjeta-servicio p {
+  color: #53635a;
+
+  line-height: 1.5;
+}
+
+
+/* LISTAS */
+
+.tarjeta-servicio ul {
+  flex-grow: 1;
+
+  margin: 5px 0 18px;
+
+  padding-left: 20px;
+
+  color: #53635a;
+
+  line-height: 1.7;
+}
+
+
+/* PRECIO */
+
+.precio-servicio {
+  padding-top: 12px;
+
+  border-top: 1px solid #e0e7e1;
+
+  color: #355344;
+}
+
+
+/* HORARIO */
+
+.horario-servicio {
+  margin-top: auto;
+
+  padding-top: 12px;
+
+  border-top: 1px solid #e0e7e1;
+}
+
+
+/* BOTÓN DE TARJETAS */
+
+.boton-servicio {
+  display: block;
+
+  margin-top: 10px;
+
+  padding: 11px 14px;
+
+  background-color: #214b39;
+
+  color: white;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  transition: background-color 180ms ease;
+}
+
+
+.boton-servicio:hover,
+.boton-servicio:focus {
+  background-color: #2d6750;
+}
+
+
+/* DIFERENCIACIÓN DE GASTRONOMÍA */
+
+.seccion-gastronomia {
+  padding-top: 40px;
+
+  border-top: 1px solid #d8e2d8;
+}
+
+
+/* BLOQUE FINAL DE RESERVA */
+
+.llamado-reserva {
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background-color: #e8f0e9;
+
+  border-radius: 10px;
+}
+
+
+.llamado-reserva h2 {
+  margin-top: 0;
+
+  color: #214b39;
+}
+
+
+.llamado-reserva p {
+  max-width: 650px;
+
+  margin: 0 auto 22px;
+
+  color: #52635a;
+
+  line-height: 1.5;
+}
+
+
+/* BOTÓN FINAL */
+
+.boton-reserva-alojamiento {
+  display: inline-block;
+
+  padding: 13px 20px;
+
+  background-color: #214b39;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+
+.boton-reserva-alojamiento:hover,
+.boton-reserva-alojamiento:focus {
+  background-color: #2d6750;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   DISEÑO RESPONSIVO
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+  .contenedor-tarjetas-servicios {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .pagina-alojamiento {
+    background-attachment: scroll;
+  }
+
+
+  .contenedor-principal-alojamiento {
+    padding: 30px 14px 48px;
+  }
+
+
+  .ventana-alojamiento {
+    padding: 28px 16px;
+  }
+
+
+  .contenedor-tarjetas-servicios {
+    grid-template-columns: 1fr;
+  }
+
+
+  .encabezado-alojamiento {
+    margin-bottom: 35px;
+  }
+
+
+  .seccion-servicios {
+    margin-bottom: 40px;
+  }
+
+
+  .tarjeta-servicio {
+    padding: 20px;
+  }
+
+}
