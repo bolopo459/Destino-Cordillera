@@ -37,6 +37,11 @@ La carga de trabajo fue dividida equitativamente entre los tres miembros del equ
   * Configuración inicial del repositorio y estructura de carpetas (`css/`, `img/`).
   * Creación de la hoja de estilos base (`css/styles.css`) y barra de navegación común.
 * **[Iván Herrera ]:**
+  * Creación y maquetación de la sección de Alojamiento y Gastronomía (`pagina2.html`).
+  * Implementación de tarjetas informativas para opciones de alojamiento y gastronomía.
+  * Desarrollo de estilos CSS personalizados y diseño responsivo para la sección.
+  * Integración de enlaces hacia la página de Reserva y Contacto.
+
 
 
 ## Estructura del Sitio
