@@ -219,3 +219,168 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.pagina-contacto {
+  min-height: 100vh;
+  color: #1c3328;
+  background-image: linear-gradient(rgba(15, 40, 29, 0.52), rgba(15, 40, 29, 0.66)), url('../img/inicio.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contenedor-principal-contacto {
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px 64px;
+}
+
+.ventana-contacto {
+  width: min(100%, 1050px);
+  padding: 38px;
+  box-sizing: border-box;
+  background-color: rgba(250, 252, 247, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32);
+}
+
+.banner-titulo {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.banner-titulo h1 {
+  margin: 0 0 10px;
+  color: #214b39;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.banner-titulo p,
+.bajada-form,
+.tarjeta-info-mapa p {
+  color: #52635a;
+  line-height: 1.5;
+}
+
+.layout-contacto {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+  gap: 24px;
+}
+
+.caja-formulario,
+.caja-informacion > div {
+  padding: 26px;
+  background-color: rgba(255, 255, 255, 0.78);
+  border: 1px solid #d8e2d8;
+  border-radius: 10px;
+}
+
+.caja-formulario h2,
+.caja-informacion h2 {
+  margin-top: 0;
+  color: #214b39;
+}
+
+.formulario-turismo,
+.grupo-campo,
+.campo-mitad {
+  display: grid;
+  gap: 8px;
+}
+
+.formulario-turismo {
+  gap: 17px;
+}
+
+.grupo-campo-doble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.grupo-campo label,
+.campo-mitad label {
+  color: #355344;
+  font-weight: 600;
+}
+
+.formulario-turismo input,
+.formulario-turismo select,
+.formulario-turismo textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #c5d4c8;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #1c3328;
+  font: inherit;
+}
+
+.formulario-turismo textarea {
+  resize: vertical;
+}
+
+.btn-enviar-reserva {
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 6px;
+  background-color: #214b39;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-enviar-reserva:hover,
+.btn-enviar-reserva:focus-visible {
+  background-color: #2d6750;
+}
+
+.caja-informacion {
+  display: grid;
+  align-content: start;
+  gap: 24px;
+}
+
+.lista-datos {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.contenedor-mapa iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+  .pagina-contacto {
+    background-attachment: scroll;
+  }
+
+  .contenedor-principal-contacto {
+    padding: 30px 14px 48px;
+  }
+
+  .ventana-contacto {
+    padding: 25px 16px;
+  }
+
+  .layout-contacto,
+  .grupo-campo-doble {
+    grid-template-columns: 1fr;
+  }
+
+  .caja-formulario,
+  .caja-informacion > div {
+    padding: 20px;
+  }
+
+}
