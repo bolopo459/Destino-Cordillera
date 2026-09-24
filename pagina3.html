@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destino Cordillera - Reserva y Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="pagina-contacto">
+
+  <header>
+    <nav>
+      <h2>Destino Cordillera</h2>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="panoramas.html">Panoramas</a></li>
+        <li><a href="alojamiento-gastronomia.html">Alojamiento</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor-principal-contacto">
+
+    <section class="ventana-contacto">
+      <section class="banner-titulo">
+        <h1>Reserva y Contacto</h1>
+        <p>Ponte en contacto con nuestro equipo para cotizar, reservar actividades o resolver cualquier duda.</p>
+      </section>
+
+      <div class="layout-contacto">
+
+      <section class="caja-formulario">
+        <h2>Solicitud de Reserva / Consulta</h2>
+        <p class="bajada-form">Completa los campos a continuación y te responderemos a la brevedad.</p>
+
+        <form action="#" method="post" class="formulario-turismo">
+          
+          <div class="grupo-campo">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Valentina Morales" required>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" inputmode="email" autocomplete="email" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="telefono">Teléfono / WhatsApp:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678">
+          </div>
+
+          <div class="grupo-campo">
+            <label for="actividad">Actividad de interés:</label>
+            <select id="actividad" name="actividad" required>
+              <option value="">-- Selecciona un panorama --</option>
+              <option value="patinaje">Patinaje sobre Hielo</option>
+              <option value="termas">Termas Cordilleranas</option>
+              <option value="rafting">Rafting Río Blanco</option>
+              <option value="eventos">Eventos Nocturnos y Fogatas</option>
+              <option value="astronomia">Observación Astronómica Nocturna</option>
+              <option value="escalada">Escalada en Roca</option>
+              <option value="general">Consulta General / Alojamiento</option>
+            </select>
+          </div>
+
+          <div class="grupo-campo-doble">
+            <div class="campo-mitad">
+              <label for="fecha">Fecha estimada:</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="campo-mitad">
+              <label for="personas">N° de personas:</label>
+              <input type="number" id="personas" name="personas" min="1" max="25" value="2" required>
+            </div>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="mensaje">Mensaje o requerimiento especial:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indica si requieres arriendo de equipo, traslados o especificaciones sobre tu estadía..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar-reserva">Enviar Solicitud</button>
+        </form>
+      </section>
+
+      <aside class="caja-informacion" id="informacion-contacto">
+        
+        <div class="tarjeta-info-contacto">
+          <h2>Información y Atención</h2>
+          <ul class="lista-datos">
+            <li>📍 <strong>Centro de Informaciones:</strong> Av. Cordillera Central #1580, Sector El Refugio.</li>
+            <li>📞 <strong>Teléfono de contacto:</strong> +56 9 8765 4321</li>
+            <li>✉️ <strong>Correo electrónico:</strong> contacto@destinocordillera.cl</li>
+            <li>⏰ <strong>Horario de atención:</strong> Lunes a Domingo, de 08:30 a 20:00 hrs.</li>
+          </ul>
+        </div>
+
+        <div class="tarjeta-info-mapa">
+          <h2>Ubicación Referencial</h2>
+          <p>Nos ubicamos en el corazón de la precordillera andina, a 45 minutos del centro de la comuna:</p>
+          <div class="contenedor-mapa">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106385.8715878482!2d-70.45!3d-33.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMzJzAwLjAiUyA3MMKwMjcnMDAuMCJX!5e0!3m2!1ses!2scl!4v1600000000000" 
+              width="100%" 
+              height="240" 
+              style="border:0; border-radius: 8px;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+      </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Destino Cordillera - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
